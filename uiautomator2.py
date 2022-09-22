@@ -20,7 +20,7 @@ def _main() -> None:
     base_driver = webdriver.Remote('http://localhost:4723/wd/hub', caps)
 
     # Convert chrome_driver to smartDriver
-    driver = SmartDriver(base_driver, api_key='123456')
+    driver = SmartDriver(base_driver, api_key='<<get your api key at dev-tools.ai>>')
 
     sleep(5)
     ingest = driver.find_element(by=MobileBy.ID, value="com.todoist:id/btn_welcome_email")

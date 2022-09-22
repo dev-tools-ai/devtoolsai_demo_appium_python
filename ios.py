@@ -27,7 +27,7 @@ def _main() -> None:
     base_driver = webdriver.Remote('http://localhost:4723/wd/hub', caps)
 
     # Convert chrome_driver to smartDriver
-    driver = SmartDriver(base_driver, api_key='123456')
+    driver = SmartDriver(base_driver, api_key='<<get your api key at dev-tools.ai>>')
 
     sleep(3)
     element = driver.find_element(by=By.XPATH, value='//XCUIElementTypeApplication[@name="testAiSampleApp"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextField')
